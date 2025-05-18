@@ -8,7 +8,7 @@ def programa_1(display, touch, Boton):
 
     # Dibujando botones
     texto = "PROYECTO FINAL\nIntegrantes:\nKarla \nCristopher \nAndy \nPana"
-    boton = Boton((0, 0, WIDTH, HEIGHT), (0, 0, 0), 'Integrantes', (255, 255, 255))
+    boton = Boton((0, 0, WIDTH, HEIGHT), (0, 0, 0), texto, (255, 255, 255))
     boton.dibuja()
     display.image(Boton.imagen)
 
