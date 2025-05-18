@@ -16,7 +16,7 @@ def read_bluetooth():
                         linea = bluetooth.readline().decode('utf-8').strip() #Almacena los datos como string
                         if linea and linea.split(): #Si exite el dato 
                             print(f"Dato recibido: '{linea}'")
-                            match = re.match(r'(\d+\.\d)\s*C', linea) #Validación de la línea con una expresión regular (busqueda
+                            match = re.match(r'(\d+\.\d{3})\s*C', linea) #Validación de la línea con una expresión regular (busqueda
                             if match: #Si tiene un formato valido
                                 try: #Empieza
                                     temp = float(match.group(1)) #Lo convierte a numero flotante
