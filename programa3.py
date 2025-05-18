@@ -22,7 +22,7 @@ def programa_3(display, touch, Boton):
             if temperatures:
                 times, temps = zip(*temperatures)
                 plt.figure(figsize=(WIDTH/100, HEIGHT/100), dpi=100)  # 240x320 píxeles
-                plt.plot([t - times[0] for t in times], temps, label="Temperatura (°C)")
+                #plt.plot([t - times[0] for t in times], temps, label="Temperatura (°C)")
                 plt.xlabel("Tiempo (s)")
                 plt.ylabel("Temperatura (°C)")
                 plt.legend()
