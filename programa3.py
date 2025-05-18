@@ -21,7 +21,7 @@ def programa_3(display, touch, Boton):
             temperatures = temp_list[-50:]  # Últimos 50 puntos para optimizar
             if temperatures:
                 times, temps = zip(*temperatures)
-                plt.figure(figsize=(WIDTH/200, HEIGHT/200), dpi=60)  # Baja resolución
+                plt.figure(figsize=(WIDTH/100, HEIGHT/100), dpi=100)  # 240x320 píxeles
                 plt.plot([t - times[0] for t in times], temps, label="Temperatura (°C)")
                 plt.xlabel("Tiempo (s)")
                 plt.ylabel("Temperatura (°C)")
