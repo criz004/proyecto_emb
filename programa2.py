@@ -18,7 +18,7 @@ def programa_2(display, touch, Boton):
             temp_actual = temp 
             temperaturas = temp_list
             # Actualizar pantalla
-            texto = f"Temperatura:\n[{temp_actual:.f} °C]" if temp_actual is not None else "Esperando datos..." #Salida
+            texto = f"Temperatura:\n[{temp_actual} °C]" if temp_actual is not None else "Esperando datos..." #Salida
             boton = Boton((0, 0, WIDTH, HEIGHT), (0, 0, 0), texto, (255, 255, 255)) #  Crea botón
             boton.dibuja()
             display.image(Boton.imagen)
