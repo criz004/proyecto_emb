@@ -17,7 +17,7 @@ def programa_0(display, touch, Boton):
                 y,x_inv = touch.get_coordinates()
             except:
                 continue
-            x_inv = WIDTH-x_inv
+            x = WIDTH-x_inv
             print(x,y)
             if y <= (1*HEIGHT//3-1):
                 estado = 1
