@@ -7,7 +7,7 @@ def programa_1(display, touch, Boton):
     WIDTH, HEIGHT = display.width, display.height
 
     # Dibujando botones
-    texto = "PROYECTO FINAL\nIntegrantes:\nKarla \nCristopher \nAndy \nPana"
+    texto = "PROYECTO FINAL\nIntegrantes:\nKarla \nCristopher \nAndy \nDaniel"
     boton = Boton((0, 0, WIDTH, HEIGHT), (0, 0, 0), texto, (255, 255, 255))
     boton.dibuja()
     display.image(Boton.imagen)
