@@ -14,10 +14,10 @@ def programa_0(display, touch, Boton):
     while True:
         if touch.is_pressed():
             try:
-                x_inv,y = touch.get_coordinates()
+                y,x_inv = touch.get_coordinates()
             except:
                 continue
-            x = WIDTH-x_inv
+            x_inv = WIDTH-x_inv
             print(x,y)
             if y <= (1*HEIGHT//3-1):
                 estado = 1
