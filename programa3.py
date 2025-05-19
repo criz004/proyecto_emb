@@ -53,6 +53,8 @@ def programa_3(display, touch, Boton):
                 x_inv, y = touch.get_coordinates()
                 x = WIDTH - x_inv
                 print(f"Toque detectado: ({x}, {y})")
+                stop_event.set()
+                thread.join()
                 estado = 0  # Volver al menú principal
                 break
             except:
